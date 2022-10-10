@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+}
+/* commaon END */
+
+/* Header Start */
+header {
+    background-color: #BEB7D8;
+    user-select: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1175px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.main-top {
+    display: flex;
+    /* align-items: center;
+    height: 90px; */
+    padding: 24.5px 0;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 35px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+a {
+    color: #383838;
+    text-decoration: none;
+}
+
+/* .icon {
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.phone {
+    background: url("img/phone\ icon.svg") no-repeat;
+}
+
+.skype {
+    background: url("img/Skype\ icon.svg") no-repeat;
+}
+
+.tg {
+    background: url("img/telegram\ icon.svg") no-repeat;
+} */
+
+.icon {
+    /* margin-right: 30px; */
+    margin-left: 50px;
+    position: relative;
+}
+
+.icon::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.phone::before {
+    background: url("img/phone\ icon.svg") no-repeat;
+}
+
+.skype::before {
+    background: url("img/Skype\ icon.svg") no-repeat;
+}
+
+.tg::before {
+    background: url("img/telegram\ icon.svg") no-repeat;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    background-color: #006BA7;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.callback {
+    width: 180px;
+    margin-left: 30px;
+}
+
+button:hover {
+    background-color: rgb(0, 152, 152);
+    cursor: pointer;
+}
+/* Header END */
+
+/* Main START */
+h1 {
+    color: #006BA7;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #383838;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.title-section {
+    text-align: center;
+    background: url("img/laptop\ 1.png") no-repeat;
+    background-position: right bottom;
+    background-size: 313px 239px;
+    padding: 90px 0;
+}
+
+.btns {
+    margin-top: 50px;
+    user-select: none;
+}
+
+.btns button {
+    margin: 0 13px;
+}
+/* First section END */
+
+
+/* Second section START */
+.second-section {
+    background-color: #BEB7D8;
+    padding: 70px 0 30px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 335px;
+    color: #383838;
+    font-size: 14px;
+    line-height: 18.5px;
+    min-height: 145px;
+}
+
+b {
+    display: block;
+}
+/* Second section END */
+
+/* Footer */
+footer {
+    line-height: 16px;
+    background-color: #383838;
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+    padding: 13px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+@media (max-width: 991px) {
+    .main-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .title-section {
+        background-position: 136% 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .icon {
+        margin-left: 0;
+        margin-bottom: 11px;
+    }
+
+    .callback {
+        margin-left: 0;
+        margin-top: 7px;
+    }
+
+    .logo {
+        margin-bottom: 7px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .btns button {
+        margin-bottom: 13px;
+    }
+
+    .title-section {
+        background-position: 130% 130%;
+    }
+
+    .info {
+        min-height: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
